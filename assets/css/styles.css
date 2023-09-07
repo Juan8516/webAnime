@@ -276,6 +276,9 @@ img {
 }
 
 /*=============== TENDENCIA ANIME ===============*/
+.trending__anime {
+  background-color: var(--container-color-light);
+}
 
 /*=============== FOOTER ===============*/
 
