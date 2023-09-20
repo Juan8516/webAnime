@@ -116,6 +116,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .nav {
@@ -136,6 +137,10 @@ img {
 }
 
 /* Scroll header */
+.scroll-header {
+  background-color: var(--container-color-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 /* Active link */
 .nav__link:hover,
@@ -349,6 +354,7 @@ img {
 .tweet__icon {
   color: var(--first-color);
   font-size: var(--h1-font-size);
+  margin-top: 1rem;
 }
 
 .footer__instagram {
