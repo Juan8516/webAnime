@@ -136,6 +136,11 @@ img {
   transition: all 0.3s var(--transition);
 }
 
+.nav__close,
+.nav__toogle {
+  display: none;
+}
+
 /* Scroll header */
 .scroll-header {
   background-color: var(--container-color-light);
@@ -297,6 +302,7 @@ img {
 }
 
 .footer__title {
+  text-align: center;
   font-size: var(--h3-font-size);
   margin-bottom: 1.5rem;
 }
@@ -382,16 +388,112 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .home__container {
+    grid-template-columns: 5fr 7fr;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* For medium devices */
 @media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .home__container,
+  .subscription__container {
+    grid-template-columns: 1fr;
+  }
+
+  .home__container {
+    order: 1;
+  }
+
+  .subscription {
+    height: 100%;
+  }
+
+  .subscription__description {
+    max-width: 100%;
+  }
+
+  .item__title,
+  .tweet_title {
+    font-size: var(--small-font-size);
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--title-color);
+    width: 400px;
+    height: 100px;
+    padding: 4rem 1rem;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    row-gap: 0.75rem;
+  }
+
+  .nav__link,
+  .nav__close {
+    color: var(--black);
+  }
+
+  .nav__link {
+    padding: 0.75rem;
+  }
+
+  .active-link {
+    background-color: var(--first-color);
+    color: var(--title-color);
+    display: block;
+  }
+
+  .nav__close,
+  .nav__toogle {
+    display: block;
+    font-size: var(--h2-font-size);
+  }
+
+  .nav__toogle {
+    color: var(--title-color);
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* For small devices */
