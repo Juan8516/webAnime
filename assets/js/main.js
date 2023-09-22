@@ -1,10 +1,23 @@
 /*=============== MOSTRAR MENU ===============*/
+const navMenu = document.getElementById('nav-menu')
+navToogle = document.getElementById('nav-toogle')
+navClose = document.getElementById('nav-close')
 
 /*===== MOSTRAR MENU =====*/
 /* validar si existe constante */
+if (navToogle) {
+    navToogle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+}
 
 /*===== MENU HIDDEN =====*/
 /* validar si existe constante */
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    })
+}
 
 /*=============== SCROLL HEADER ===============*/
 function scrollHeader() {
