@@ -302,7 +302,6 @@ img {
 }
 
 .footer__title {
-  text-align: center;
   font-size: var(--h3-font-size);
   margin-bottom: 1.5rem;
 }
@@ -516,4 +515,15 @@ img {
 }
 
 @media screen and (max-width: 450px) {
+  .brand__logo {
+    width: 55%;
+  }
+
+  .footer__anime-item img {
+    width: 85px;
+  }
+
+  .footer__instagram {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
