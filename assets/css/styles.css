@@ -498,6 +498,21 @@ img {
 
 /* For small devices */
 @media screen and (max-width: 576px) {
+  .section {
+    padding-block: 3rem;
+  }
+
+  .nav {
+    height: var(--header-height);
+  }
+
+  .nav__menu {
+    width: 100%;
+  }
+
+  .footer__container {
+    padding-block: 2rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
